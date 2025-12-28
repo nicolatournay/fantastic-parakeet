@@ -4,10 +4,17 @@
   "scripts": {
     "start": "jeasx start",
     "build": "jeasx build",
-    "dev": "jeasx dev",
-    "clean": "jeasx clean"
+    "dev": "concurrently -c auto -n dev,css \"jeasx dev\" \"npm run css -- --watch\"",
+    "clean": "jeasx clean",
+    "css": "npx @tailwindcss/cli -i ./src/browser/tailwind/tailwind.css -o ./src/browser/tailwind/output.css"
   },
   "dependencies": {
     "jeasx": "2.2.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "@tailwindcss/typography": "^0.5.19",
+    "concurrently": "^9.2.1",
+    "tailwindcss": "^4.1.18"
   }
 }

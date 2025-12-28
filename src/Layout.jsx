@@ -19,7 +19,6 @@ export default function Layout({children}) {
                 <link
                     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
                     rel="stylesheet" />
-                <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
                 {/* <script id="tailwind-config">
                     tailwind.config = {
                         darkMode: "class",
@@ -51,6 +50,10 @@ export default function Layout({children}) {
                         scrollbar-width: none;
                     }
                 </style> */}
+                <link
+                    rel="stylesheet"
+                    href="/index.css"
+                />
             </head>
 
             <body
