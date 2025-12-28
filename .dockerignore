@@ -1,0 +1,12 @@
+#
+# This file is an example. Delete it at will.
+#
+**
+!/public/
+!/src/
+!.env
+!.env.js
+!.npmrc
+!package-lock.json
+!package.json
+!tsconfig.json
