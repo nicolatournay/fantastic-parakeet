@@ -1,6 +1,6 @@
 export default function Hero({
     hook = "",
-    title = "",
+    title = {firstLine: "", secondLine: ""},
     description = "",
     primaryButton = {cta: "", href: ""},
     secondaryButton = {cta: "", href: ""}
@@ -13,7 +13,7 @@ export default function Hero({
                 </div>
             }
             <h1 class="text-5xl md:text-7xl font-black leading-tight tracking-tight dark:text-white font-display">
-                {title}
+                {title.firstLine}<br /><span class="text-primary italic">{title.secondLine}</span>
             </h1>
             <p
                 class="text-lg md:text-2xl text-[#64748b] dark:text-[#9dabb8] max-w-3xl mx-auto font-display font-light leading-relaxed">

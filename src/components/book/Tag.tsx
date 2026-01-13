@@ -1,4 +1,4 @@
-import COLORS from "../utils/colors";
+import COLORS from "../../utils/colors";
 
 type Color = keyof typeof COLORS;
 
