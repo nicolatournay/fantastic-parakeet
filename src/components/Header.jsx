@@ -55,11 +55,13 @@ export default function Header() {
                         </button>
                         <div class="w-px h-5 bg-gray-200 dark:bg-gray-700 hidden sm:block mx-1"></div>
                         <button
+                            id="theme-toggler"
                             class="p-2 text-slate-600 dark:text-yellow-400 hover:bg-gray-100 dark:hover:bg-[#293038] hover:text-primary rounded-full transition-colors"
                             title="Mode sombre/clair">
-                            <span class="material-symbols-outlined hidden dark:block"
+                            <span class="material-symbols-outlined hidden! dark:block!"
                                 style="font-size: 20px;">light_mode</span>
-                            <span class="material-symbols-outlined dark:hidden" style="font-size: 20px;">dark_mode</span>
+                            <span class="material-symbols-outlined block! dark:hidden!"
+                                style="font-size: 20px;">dark_mode</span>
                         </button>
                         <button
                             class="p-2 text-slate-600 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:text-orange-600 dark:hover:text-orange-500 rounded-full transition-colors"
